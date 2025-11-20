@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "your-dockerhub-username/your-image-name"
+        DOCKER_IMAGE = "rshinde7/my-java-app"
         DOCKER_CREDENTIALS = 'docker-hub-creds' // Jenkins credential Image') {        DOCKER_CREDENTIALS = 'docker-hub-creds' // Jenkins credential ID
             steps {
                 script {
@@ -35,7 +35,7 @@ pipeline {
         }
     }
 }
-    }
+ }
 
     stages {
         stage('Checkout') {
